@@ -1,0 +1,105 @@
+/* 
+  Nom du fichier : style.css
+  Date de création : 2026
+  Auteur : HACHE
+  Description : Feuille de style de base pour basesCSS.html
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+section {
+    margin: 10px;
+}
+
+article {
+    margin: 10px;
+    padding: 10px;
+    border: 2px dashed gray;
+}
+
+p {
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    font-size: 2em;
+    font-variant: small-caps;
+}
+
+h2 {
+    padding: 10px;
+    background-color: red;
+    border-left: 50px solid black;
+    text-transform: capitalize;
+}
+
+#info {
+    width: 600px;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 2em;
+    padding: 10px;
+    margin: auto;
+}
+
+.documentation {
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+.documentation a {
+    text-decoration: none;
+    background-color: darkgreen;
+    color: yellowgreen;
+    padding: 5px;
+}
+
+.documentation a:hover {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+.code {
+    font-family: courier;
+    background-color: #f2f2f2;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+pre {
+    margin: 10px;
+    padding: 10px;
+}
+
