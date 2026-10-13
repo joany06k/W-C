@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Initiation au développement Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="tphtml.css">
+</head>
+
+<body>
+    <body style="background: url('images/bg_body.jpg')"></body>
+    <header>
+        Initiation au développement Web
+    </header>
+
+    <div class="contenu">
+        <nav>
+            <a href="index.html" class="clic">Accueil</a>
+            <a href="bases.html">Les bases du langage HTML</a>
+            <a href="tableau.html">Les tableaux</a>
+            <a href="styles_exercices.html">Les styles CSS : exercices</a>
+            <a href="styles_illustration.html">Les styles CSS : illustration</a>
+            <a href="js_exercices.html">Javascript : exercices</a>
+            <a href="js_ampoule.html">Javascript : l'ampoule</a>
+            <a href="js_planets.html">Javascript : planètes</a>
+            <a href="php_films.html">Exemple PHP : films</a>
+        </nav>
+            
+        <article>
+            
+            <h1>Les tableaux</h1>
+
+            <h2>Un tableau 3x3</h2>
+
+            <table border="1">
+                <tr>
+                    <th>row1,col1</th>
+                    <th>row1,col2</th>
+                    <th>row1,col3</th>
+                </tr>
+             
+                <tr>
+                    <td>row2,col1</td>
+                    <td>row2,col2</td>
+                    <td>row2,col3</td>
+                </tr>
+                <tr>
+                    <td>row3,col1</td>
+                    <td>row3,col2</td>
+                    <td>row3,col3</td>
+                </tr>
+            </table>
+
+            <h2>Cellules regroupées sur deux colonnes : </h2>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Telephone</th>
+            </tr>
+            <tr>
+                <td>Bill Gates</td>
+                <td>555 77 854</td>
+                <td>555 77 855</td>
+            </tr>
+        </table>
+
+        <h1>Cellules regroupées sur deux rangées:</h1>
+
+        <table border="1">
+            <tr>
+                <th>First Name:</th>
+                <td>Bill Gates</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Telephone:</th>
+                <td>555 77 854</td>
+            </tr>
+            <tr>
+                <td>555 77 855</td>
+            </tr>
+        </table>
+
+        <h1> Un tableau plus complexe ...</h1>
+
+        <table border="1">
+            <tr>
+                <td colspan="4">Regroupement horizontal de 4 cellules</td>
+            </tr>
+
+            <tr>
+                 <td rowspan="4">Regroupement vertical de 4 cellules </td>
+                 <td colspan="2">Deux horizontales</td>
+                 <td rowspan="2">Deux verticales</td>
+            </tr>
+            
+            <tr>
+                <td>Une cellule</td>
+                <td>ça vit juste en dessous !</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Encore deux verticales</td>
+                <td><img src="images/anim_nombre.gif" alt="image captcha"></td>
+                <td>Une autre cellule</td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">Encore deux horizontales</td>
+            </tr>
+
+        </table>
+
+        </article>
+    </div>
+    
+    <footer>
+        Copyright 2024 - 2025 Polytech Lyon 3A Info
+    </footer>
+
+</body>
+</html>
