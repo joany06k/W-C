@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="tphtml.css">
 </head>
-<body style="background: url('images/bg_body.jpg')"></body>
+<body>
 
     <header>
         Initiation au développement Web
@@ -24,21 +24,20 @@
             <a href="js_planets.html">Javascript : planètes</a>
             <a href="php_films.html">Exemple PHP : films</a>
         </nav>
-            
-        <article style="text-align: center;">
-            <h2>Allumer ou éteindre l'ampoule</h2>
-            
-            <div style="margin: 20px;">
-                <img id="monAmpoule" src="images/pic_bulboff.gif" onclick="OnOffAmpoule()" style="cursor: pointer;">
-                <p>Cliquer sur l'ampoule !</p>
-            </div>
+
+        <article class="centre">
+            <h1>Allumer ou éteindre l'ampoule</h1>
+
+            <img id="monAmpoule" src="images/pic_bulboff.gif" alt="Ampoule éteinte" class="ampoule" onclick="OnOffAmpoule()">
+            <p class="centre">Cliquer sur l'ampoule !</p>
         </article>
     </div>
-    
+
     <footer>
-        Copyright 2023 - 2024 Polytech Lyon 3A Info
+        Copyright 2024 - 2025 Polytech Lyon 3A Info
     </footer>
 
     <script src="javascript/ampoule.js"></script>
+
 </body>
 </html>

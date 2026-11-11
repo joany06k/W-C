@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="tphtml.css">
 </head>
-<body style="background: url('images/bg_body.jpg')"></body>
+<body>
 
     <header>
         Initiation au développement Web
@@ -26,14 +26,17 @@
         </nav>
 
         <article>
-            <h2>Exercices javascript</h2>
+            <h1>Exercices javascript</h1>
+
+            <hr>
+
             
-            <!-- 1. Exercice Fibonacci -->
-            <h3>Fibonacci</h3>
+            <h2>Fibonacci</h2>
             <p>Calcul de la suite de Fibonacci de rang "n" :</p>
             <form name="fibonacci">
-                <p>Rentrer le rang à calculer : 
-                    <input type="text" name="n"> 
+                <p>
+                    <label for="n">Rentrer le rang à calculer :</label>
+                    <input type="text" id="n" name="n">
                     <input type="button" value="Calculer Fibonacci" onclick="Appeler_Fibonacci()">
                 </p>
                 <p id="resultat_fibonacci">Résultat du calcul de la suite de Fibonacci en attente...</p>
@@ -41,25 +44,23 @@
 
             <hr>
 
-            <!-- 2. Exercice Range -->
-            <h3>Range(stop, [start], [step])</h3>
-            <form name="range">
-                <p>Stop: <input type="text" id="stop"> 
-                   [Start]: <input type="text" id="start"> 
-                   [Step]: <input type="text" id="step">
-                   <input type="button" value="Calculer Range" onclick="Appeler_Range()">
-                </p>
-                <p id="affichage_range">Range = []</p>
-            </form>
-
-            <hr>
-
             
+            <h2>Range(stop, [start], [step])</h2>
+            <p>Fonction qui prend trois arguments en paramètre et renvoie le tableau des entiers compris entre start (inclus) et stop (exclu), avec un pas de step.</p>
+            <form name="range">
+                <p>
+                    <label for="stop">Stop :</label> <input type="text" id="stop">
+                    <label for="start">[Start] :</label> <input type="text" id="start">
+                    <label for="step">[Step] :</label> <input type="text" id="step">
+                    <input type="button" value="Range(stop, [start], [step])" onclick="Appeler_Range()">
+                </p>
+                <p id="affichage_range">Résultat de l'appel de la fonction Range en attente...</p>
+            </form>
         </article>
     </div>
 
     <footer>
-        Copyright 2023 - 2024 Polytech Lyon 3A Info[cite: 8]
+        Copyright 2024 - 2025 Polytech Lyon 3A Info
     </footer>
 
     <script src="javascript/exercices.js"></script>
